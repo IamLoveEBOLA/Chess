@@ -1,4 +1,4 @@
-package com.asss1.myapplication
+package com.asss1.myapplication.chess
 
 class ChessModel {
     val piecesBox = mutableSetOf<ChessPiece>()

@@ -3,6 +3,7 @@ package com.asss1.myapplication
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.asss1.myapplication.chess.ChessModel
 
 private const val TAG = "TESTAAAAA"
 
