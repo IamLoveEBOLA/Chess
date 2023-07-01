@@ -1,16 +1,19 @@
 package com.asss1.myapplication.chess
 
 import android.content.Context
+import android.graphics.BitmapFactory
 import android.graphics.Canvas
 import android.graphics.Color
 import android.graphics.Paint
+import android.graphics.Rect
 import android.util.AttributeSet
 import android.view.View
+import com.asss1.myapplication.R
 
 class ChessView(context: Context? , attrs: AttributeSet?) : View(context , attrs) {
-    private final val originX: Float = 20f
-    private final val originY: Float = 200f
-    private final val cellSide: Float = 130f
+    private  val originX: Float = 20f
+    private  val originY: Float = 200f
+    private  val cellSide: Float = 130f
 
     override fun onDraw(canvas: Canvas?) {
         val paint = Paint()
@@ -29,6 +32,9 @@ class ChessView(context: Context? , attrs: AttributeSet?) : View(context , attrs
             }
 
         }
+
+        val whiteQueenBitmap = BitmapFactory.decodeResource(resources , R.drawable.queen_white)
+        canvas?.drawBitmap(whiteQueenBitmap , null ,Rect(0,0,150,150) , paint)
     }
 
 }
